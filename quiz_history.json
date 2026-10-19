@@ -1,0 +1,32 @@
+[
+  {
+    "date": "2026-10-19 18:25:19",
+    "score": 1,
+    "total": 10,
+    "percentage": 10.0
+  },
+  {
+    "date": "2026-10-19 18:32:41",
+    "score": 2,
+    "total": 5,
+    "percentage": 40.0
+  },
+  {
+    "date": "2026-10-19 18:37:27",
+    "score": 5,
+    "total": 5,
+    "percentage": 100.0
+  },
+  {
+    "date": "2026-10-19 18:40:35",
+    "score": 4,
+    "total": 5,
+    "percentage": 80.0
+  },
+  {
+    "date": "2026-10-19 18:42:18",
+    "score": 3,
+    "total": 5,
+    "percentage": 60.0
+  }
+]
