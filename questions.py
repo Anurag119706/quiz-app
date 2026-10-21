@@ -2,8 +2,8 @@
 
 DEFAULT_QUESTIONS = [
     {
-        "question": "What is the capital of France ?",
-        "options": ["London", "Berlin", "Paris", "Madrid"],
+        "question": "What is the capital of India ?",
+        "options": ["Mumbai", "Kolkata", "Delhi", "Chennai"],
         "answer": 2,
         "category": "Geography",
         "difficulty": "easy"

@@ -3,13 +3,22 @@
 from quiz import Quiz
 from storage import print_history
 
+def show_welcome():
+    print("\n" + "=" * 60)
+    print("           🧠  WELCOME TO THE PYTHON QUIZ  🧠")
+    print("=" * 60)
+    print(" Instructions:")
+    print("   • Each question has 4 options labeled A, B, C, D.")
+    print("   • Type the LETTER of your chosen answer.")
+    print("   • Your score and review will be shown at the end.")
+    print("=" * 60)
 
 def main():
     app = Quiz()
 
     while True:
         print("\n" + "=" * 60)
-        print("QUIZ APP")
+        print(" 🎯 QUIZ APP")
         print("=" * 60)
         print("1. Full quiz (all questions)")
         print("2. Quick quiz (5 questions)")
@@ -21,11 +30,17 @@ def main():
         choice = input("\nChoose (1-6): ").strip()
 
         if choice == "1":
-            app.run()
+            start = input("\nDo you want to start the quiz? (yes/no): ").strip().lower()
+            if start in ("yes", "y"):
+                app.run()
+            else:
+                print("OKAY. BACK TO MENU !")
         elif choice == "2":
-            app.run(num=5)
+            start = input("\nDo you want to start the quiz? (yes/no): ").strip().lower()
+            if start in ("yes", "y"):
+                app.run(num=5)
         elif choice == "3":
-            cat = input("Category (Programming/Math/Geography/Science/Computers):").strip()
+            cat = input("Category (Programming/Math/Geography/Science/Computers): ").strip()
             app.run(category=cat)
         elif choice == "4":
             diff = input("Difficulty (easy/medium/hard): ").strip()
